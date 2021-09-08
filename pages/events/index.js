@@ -1,12 +1,9 @@
-import Head from 'next/head';
+import MainLayout from '../../layouts/MainLayout';
 
 export default function EventsPage() {
   return (
-    <div>
-      <Head>
-        <title>Events</title>
-      </Head>
+    <MainLayout>
       <p>My Events Placholder</p>
-    </div>
+    </MainLayout>
   );
 }
