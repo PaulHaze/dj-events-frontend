@@ -4,10 +4,10 @@ import MainLayout from '../layouts/MainLayout';
 export default function Home() {
   return (
     <MainLayout>
-      <div className="min-h-[100vh] bg-gradient-to-br from-green-300/50 to-sky-800/50 flex items-start justify-center pt-5 px-3">
+      <div className="min-h-[100vh]  flex items-start justify-center pt-5 px-3">
         <div className="bg-white p-xl rounded-lg shadow-2xl text-center">
-          <h1 className="bg-clip-text bg-gradient-to-b from-indigo-400 to-violet-800 text-transparent  text-center">
-            New Tailwind Project
+          <h1 className="bg-clip-text bg-gradient-to-b from-indigo-400 to-violet-800 font-black text-transparent  text-center">
+            DJ Events Project
           </h1>
           <div className="flex space-x-3">
             <Link href="/about">

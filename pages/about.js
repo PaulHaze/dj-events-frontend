@@ -4,7 +4,7 @@ import MainLayout from '../layouts/MainLayout';
 
 export default function AboutPage() {
   return (
-    <MainLayout>
+    <MainLayout title="About DJ Events">
       <div className="container p-5 max-w-xl">
         <h1 className="font-heading">About</h1>
         <p>Find The Latest Dj Events Near You</p>

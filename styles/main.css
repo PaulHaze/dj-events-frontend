@@ -1,6 +1,9 @@
 @tailwind base;
 
 @layer base {
+  body {
+    @apply bg-bluegray-100/90;
+  }
   h1 {
     @apply text-5xl font-semibold leading-tight;
   }

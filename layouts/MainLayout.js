@@ -10,7 +10,7 @@ export default function MainLayout({ title, keywords, description, children }) {
         <meta name="keywords" content={keywords} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.container}>{children}</div>
+      <div className={styles.layoutContainer}>{children}</div>
     </div>
   );
 }

@@ -56,6 +56,13 @@ module.exports = {
         xl: '1280px',
         '2xl': '1536px',
       },
+      maxWidth: {
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+        '2xl': '1536px',
+      },
       spacing: {
         sm: '8px',
         md: '16px',
