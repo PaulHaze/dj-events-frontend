@@ -21,5 +21,22 @@
   }
 }
 
+@font-face {
+  font-family: 'Metropolis';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Metropolis'),
+    url(/fonts/metropolis/Metropolis-regular.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'BebasNeue';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('BebasNeue'),
+    url(/fonts/bebas-neue/BebasNeue-regular.woff2) format('ttf');
+}
+
 @tailwind components;
 @tailwind utilities;
