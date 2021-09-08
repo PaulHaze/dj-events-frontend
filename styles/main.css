@@ -2,7 +2,7 @@
 
 @layer base {
   h1 {
-    @apply text-4xl font-normal leading-normal;
+    @apply text-5xl font-semibold leading-tight;
   }
   h2 {
     @apply text-3xl font-normal leading-normal;
@@ -16,11 +16,38 @@
   h5 {
     @apply text-lg font-normal leading-normal;
   }
+  p {
+    @apply tracking-wider;
+  }
   a {
     @apply text-blue-600;
   }
 }
 
+@font-face {
+  font-family: 'Metropolis';
+  font-style: thin;
+  font-weight: 100;
+  font-display: swap;
+  src: local('Metropolis'),
+    url(/fonts/metropolis/Metropolis-thin.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Metropolis';
+  font-style: extralight;
+  font-weight: 200;
+  font-display: swap;
+  src: local('Metropolis'),
+    url(/fonts/metropolis/Metropolis-ExtraLight.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Metropolis';
+  font-style: light;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Metropolis'),
+    url(/fonts/metropolis/Metropolis-light.woff2) format('woff2');
+}
 @font-face {
   font-family: 'Metropolis';
   font-style: normal;
@@ -30,12 +57,61 @@
     url(/fonts/metropolis/Metropolis-regular.woff2) format('woff2');
 }
 @font-face {
+  font-family: 'Metropolis';
+  font-style: medium;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Metropolis'),
+    url(/fonts/metropolis/Metropolis-medium.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Metropolis';
+  font-style: medium;
+  font-weight: 500;
+  font-display: swap;
+  src: local('Metropolis'),
+    url(/fonts/metropolis/Metropolis-SemiBold.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Metropolis';
+  font-style: semibold;
+  font-weight: 600;
+  font-display: swap;
+  src: local('Metropolis'),
+    url(/fonts/metropolis/Metropolis-SemiBold.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Metropolis';
+  font-style: bold;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Metropolis'),
+    url(/fonts/metropolis/Metropolis-Bold.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Metropolis';
+  font-style: extrabold;
+  font-weight: 800;
+  font-display: swap;
+  src: local('Metropolis'),
+    url(/fonts/metropolis/Metropolis-ExtraBold.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Metropolis';
+  font-style: black;
+  font-weight: 900;
+  font-display: swap;
+  src: local('Metropolis'),
+    url(/fonts/metropolis/Metropolis-black.woff2) format('woff2');
+}
+
+@font-face {
   font-family: 'BebasNeue';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
   src: local('BebasNeue'),
-    url(/fonts/bebas-neue/BebasNeue-regular.woff2) format('ttf');
+    url(/fonts/bebas-neue/BebasNeue-Regular.woff2) format('ttf');
 }
 
 @tailwind components;
