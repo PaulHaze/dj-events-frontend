@@ -5,10 +5,6 @@ module.exports = {
   mode: 'jit',
   purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
-    fontFamily: {
-      sans: ['Metropolis', ...defaultTheme.fontFamily.sans],
-      heading: ['BebasNeue'],
-    },
     screens: {
       sm: '640px',
       md: '768px',
@@ -30,6 +26,10 @@ module.exports = {
       center: true,
     },
     extend: {
+      fontFamily: {
+        sans: ['Metropolis', ...defaultTheme.fontFamily.sans],
+        heading: ['BebasNeue'],
+      },
       colors: {
         rose: colors.rose,
         fuchsia: colors.fuchsia,

@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import styles from './MainLayout.module.css';
 
+import { NavBar } from '../components';
+
 export default function MainLayout({ title, keywords, description, children }) {
   return (
     <div>
@@ -10,6 +12,7 @@ export default function MainLayout({ title, keywords, description, children }) {
         <meta name="keywords" content={keywords} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <NavBar />
       <div className={styles.layoutContainer}>{children}</div>
     </div>
   );
