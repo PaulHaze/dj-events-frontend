@@ -19,7 +19,7 @@ export default function MainLayout({ title, keywords, description, children }) {
 }
 
 MainLayout.defaultProps = {
-  title: 'DJ Events | Find the hottest parties',
-  description: 'Find the latest club events and music happenings around you',
-  keywords: 'dj, music events',
+  title: 'Bookerly | Find, Book, Manage Your Events',
+  description: 'Find, Book, Manage Your Events',
+  keywords: 'events, venues, parties',
 };
