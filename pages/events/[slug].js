@@ -1,11 +1,10 @@
 import Link from 'next/link';
 
-import { useRouter } from 'next/router';
+// import { useRouter } from 'next/router';
 import MainLayout from '../../layouts/MainLayout';
 
 export default function EventPage() {
-  const router = useRouter();
-  console.log(router.query.slug);
+  // const router = useRouter();
   return (
     <MainLayout>
       <div className="container p-5 max-w-xl">
