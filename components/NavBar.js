@@ -64,6 +64,7 @@ export function NavBar() {
                   </button>
                 </Link>
               </li>
+              <hr className="border-white/20 lg:hidden" />
               <li className="py-3 self-center ">
                 <Link href="/venues/specials">
                   <button
