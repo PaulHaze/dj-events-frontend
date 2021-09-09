@@ -1,20 +1,23 @@
 import Head from 'next/head';
 import styles from './MainLayout.module.css';
 
-import { NavBar } from '../components';
+import { NavBar, Footer } from '../components';
 
 export default function MainLayout({ title, keywords, description, children }) {
   return (
-    <div>
+    <>
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta name="keywords" content={keywords} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <NavBar />
-      <div className={styles.layoutContainer}>{children}</div>
-    </div>
+      <div className="min-h-screen">
+        <NavBar />
+        <div className={styles.layoutContainer}>{children}</div>
+        <Footer />
+      </div>
+    </>
   );
 }
 
