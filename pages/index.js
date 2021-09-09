@@ -9,34 +9,22 @@ export default function Home() {
         <p>Find, book and manage your next party all in one place.</p>
         <div className="grid grid-cols-2 gap-4 sm:gap-0 sm:grid-cols-none sm:flex sm:space-x-3 mt-4">
           <Link href="/about">
-            <button
-              type="button"
-              className="border rounded shadow px-4 py-2 text-sm whitespace-nowrap hover:bg-coolgray-200/50"
-            >
+            <button type="button" className="btn">
               Find A Venue
             </button>
           </Link>
           <Link href="/events">
-            <button
-              type="button"
-              className="border rounded shadow px-4 py-2 text-sm whitespace-nowrap"
-            >
+            <button type="button" className="btn">
               Venues
             </button>
           </Link>
           <Link href="/events/add">
-            <button
-              type="button"
-              className="border rounded shadow px-4 py-2 text-sm whitespace-nowrap"
-            >
+            <button type="button" className="btn">
               Manage A Booking
             </button>
           </Link>
           <Link href="/events/add">
-            <button
-              type="button"
-              className="border rounded shadow px-4 py-2 text-sm whitespace-nowrap"
-            >
+            <button type="button" className="btn">
               Update Your Venue
             </button>
           </Link>

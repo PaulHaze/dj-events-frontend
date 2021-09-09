@@ -8,11 +8,11 @@ export function NavBar() {
   return (
     <>
       <nav className="relative flex flex-wrap items-center justify-between px-2 py-2 bg-gradient-to-br from-black to-coolgray-900 mb-3">
-        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
+        <div className="container px-5 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link href="/">
               <div className="text-2xl font-heading font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white cursor-pointer">
-                DJ EVENTS
+                BOOKERLY
               </div>
             </Link>
             <button

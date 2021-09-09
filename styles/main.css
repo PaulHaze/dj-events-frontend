@@ -117,4 +117,9 @@
 }
 
 @tailwind components;
+@layer components {
+  .btn {
+    @apply border rounded shadow px-4 py-2 text-sm whitespace-nowrap hover:bg-coolgray-200/50;
+  }
+}
 @tailwind utilities;
