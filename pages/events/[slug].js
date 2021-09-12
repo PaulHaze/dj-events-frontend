@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 // import { useRouter } from 'next/router';
-import MainLayout from '../../layouts/MainLayout';
+import MainLayout from '@/layouts/MainLayout';
 
 export default function EventPage() {
   // const router = useRouter();

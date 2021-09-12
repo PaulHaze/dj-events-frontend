@@ -1,7 +1,8 @@
+/* eslint-disable import/no-unresolved */
 import Head from 'next/head';
-import styles from './MainLayout.module.css';
 
-import { NavBar, Footer } from '../components';
+import { NavBar, Footer } from '@/components/index';
+import styles from './MainLayout.module.css';
 
 export default function MainLayout({ title, keywords, description, children }) {
   return (
