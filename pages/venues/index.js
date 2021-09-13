@@ -1,11 +1,12 @@
 import Link from 'next/link';
+import { Hero } from '@/components/index';
 import MainLayout from '@/layouts/MainLayout';
 
 export default function VenuesPage() {
   return (
     <MainLayout>
+      <Hero imgUrl="/images/basement.jpg" title="VENUES" />
       <div className="container p-5 max-w-xl">
-        <h1 className="font-heading">Venues</h1>
         <p>
           Whether you are looking for an intimate space for a small gathering or
           a large scale space for a big bonanza, you will find it here.

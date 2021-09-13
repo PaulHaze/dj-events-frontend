@@ -1,12 +1,16 @@
 import Link from 'next/link';
-
+import { Hero } from '@/components/index';
 import MainLayout from '@/layouts/MainLayout';
 
 export default function BookingsPage() {
   return (
     <MainLayout title="Bookerly | Bookings">
+      <Hero
+        imgUrl="/images/booking.jpg"
+        title="MANAGE BOOKING"
+        subTitle="Find, book and manage your next party all in one place."
+      />
       <div className="container p-5 max-w-xl">
-        <h1 className="font-heading">Bookings</h1>
         <p>Here you can manage, amend or make a new booking.</p>
 
         <Link href="/">

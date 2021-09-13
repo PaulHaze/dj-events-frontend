@@ -1,11 +1,12 @@
 import Link from 'next/link';
+import { Hero } from '@/components/index';
 import MainLayout from '@/layouts/MainLayout';
 
 export default function AddEventPage() {
   return (
     <MainLayout title="Add Your Venue">
+      <Hero imgUrl="/images/basement.jpg" title="ADD VENUE" />
       <div className="container p-5 max-w-xl">
-        <h1 className="font-heading">Add Venue</h1>
         <p>Enter your venue details below</p>
         <div className="flex space-x-3">
           <Link href="/venues">

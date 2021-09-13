@@ -1,12 +1,12 @@
 import Link from 'next/link';
-
+import { Hero } from '@/components/index';
 import MainLayout from '@/layouts/MainLayout';
 
 export default function SpecialsPage() {
   return (
     <MainLayout title="Bookerly | Bookings">
+      <Hero imgUrl="/images/special.jpg" title="SPECIALS" />
       <div className="container p-5 max-w-xl">
-        <h1 className="font-heading">Venue Specials</h1>
         <p>Here you can see all the special offers currently available.</p>
 
         <Link href="/">
