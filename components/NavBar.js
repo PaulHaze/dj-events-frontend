@@ -7,7 +7,7 @@ export function NavBar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <header>
-      <nav className="relative flex flex-wrap items-center justify-between px-2 py-0.5 bg-gradient-to-br from-black to-coolgray-900 mb-3">
+      <nav className="relative flex flex-wrap items-center justify-between px-2 py-0.5 bg-gradient-to-b from-black to-black">
         <div className="container px-5 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link href="/">

@@ -1,11 +1,15 @@
 import Link from 'next/link';
-import { Hero, Showcase } from '@/components/index';
+import { Hero } from '@/components/index';
 import MainLayout from '@/layouts/MainLayout';
 
 export default function Home() {
   return (
     <MainLayout title="Bookerly | Your one stop shop for funding, booking and managing your next party">
-      <Hero />
+      <Hero
+        imgUrl="/images/hubert.jpg"
+        title="BOOKERLY"
+        subTitle="Find, book and manage your next party all in one place."
+      />
       <div className="container p-5 max-w-xl">
         <div className="grid grid-cols-2 gap-4 sm:gap-0 sm:grid-cols-none sm:flex sm:space-x-3 mt-4">
           <Link href="/venues">
