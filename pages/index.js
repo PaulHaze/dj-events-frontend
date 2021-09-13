@@ -1,9 +1,11 @@
 import Link from 'next/link';
+import { Hero } from '@/components/index';
 import MainLayout from '@/layouts/MainLayout';
 
 export default function Home() {
   return (
     <MainLayout title="Bookerly | Your one stop shop for funding, booking and managing your next party">
+      <Hero />
       <div className="container p-5 max-w-xl">
         <h1 className="font-heading">Bookerly</h1>
         <p>Find, book and manage your next party all in one place.</p>
