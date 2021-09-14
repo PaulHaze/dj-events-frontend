@@ -1,7 +1,9 @@
 import { Hero, LinkButton } from '@/components/index';
 import MainLayout from '@/layouts/MainLayout';
 
-export default function EventsPage() {
+import { API_URL } from '@/config/index';
+
+export default function EventsPage({ events }) {
   return (
     <MainLayout title="DJ Events">
       <Hero
@@ -19,4 +21,15 @@ export default function EventsPage() {
       </div>
     </MainLayout>
   );
+}
+
+export async function getStaticProps() {
+  const res = await fetch(`${API_URL}/events`);
+  const events = await res.json();
+  return {
+    props: {
+      events,
+    },
+    revalidate: 1,
+  };
 }
