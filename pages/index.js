@@ -1,5 +1,4 @@
-import Link from 'next/link';
-import { Hero } from '@/components/index';
+import { Hero, LinkButton } from '@/components/index';
 import MainLayout from '@/layouts/MainLayout';
 
 export default function Home() {
@@ -10,28 +9,30 @@ export default function Home() {
         title="BOOKERLY"
         subTitle="Find, book and manage your next party all in one place."
       />
-      <div className="container p-5 max-w-xl">
-        <div className="grid grid-cols-2 gap-4 sm:gap-0 sm:grid-cols-none sm:flex sm:space-x-3 mt-4">
-          <Link href="/venues">
-            <button type="button" className="btn">
-              Find A Venue
-            </button>
-          </Link>
-          <Link href="/bookings">
-            <button type="button" className="btn">
-              Manage A Booking
-            </button>
-          </Link>
-          <Link href="/venues/add">
-            <button type="button" className="btn">
-              Add Your Venue
-            </button>
-          </Link>
-          <Link href="/venues/specials">
-            <button type="button" className="btn">
-              Specials
-            </button>
-          </Link>
+      <div className="container p-5 lg:px-0 max-w-xl">
+        <div className="grid grid-cols-2 gap-4 md:gap-0 md:grid-cols-none md:flex md:space-x-3 mt-4">
+          <LinkButton className="flex-1" href="/events" linkText="Events" />
+          <LinkButton
+            className="flex-1"
+            href="/bookings"
+            linkText="Manage A Booking"
+          />
+          <LinkButton
+            className="flex-1"
+            href="/venues"
+            linkText="Find A Venue"
+          />
+          <LinkButton
+            className="flex-1"
+            href="/venues/add"
+            linkText="Add Your Venue"
+          />
+          <LinkButton
+            className="flex-1"
+            href="/venues/specials"
+            linkText="Specials"
+          />
+          <LinkButton className="flex-1" href="/about" linkText="About Us" />
         </div>
         <div className="mt-10">
           <p className="text-sm font-heading text-gray-400">Version 1.0.0</p>

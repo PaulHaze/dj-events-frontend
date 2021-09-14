@@ -7,7 +7,10 @@ export default function AboutPage() {
     <MainLayout title="About DJ Events">
       <div className="container p-5 max-w-xl">
         <h1 className="font-heading">About</h1>
-        <p>Find The Latest Dj Events Near You</p>
+        <p>
+          We are a one stop shop for booking venues, managing functions and
+          finding parties
+        </p>
 
         <Link href="/">
           <button
