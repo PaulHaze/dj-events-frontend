@@ -1,4 +1,3 @@
-import { render } from 'react-dom';
 import { EventsCard } from './EventsCard';
 
 export function EventsList({ events }) {
@@ -7,12 +6,18 @@ export function EventsList({ events }) {
   }
 
   const renderEvents = events.map(event => (
-    <EventsCard key={event.id} event={event} />
+    <div key={event.id}>
+      <EventsCard event={event} />
+    </div>
   ));
   return (
     <div>
       <h1>Events List</h1>
-      {events && <div className="my-4">{renderEvents}</div>}
+      {events && (
+        <div className="my-4 lg:grid lg:grid-cols-2 lg:gap-2">
+          {renderEvents}
+        </div>
+      )}
     </div>
   );
 }
