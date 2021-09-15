@@ -75,11 +75,38 @@ export default function EventPage({ event }) {
         /> */}
 
         {/* DJS */}
-        <div className="mt-5 flex items-center">
-          <h2 className="font-heading">Performers: </h2>
-          <h5 className="text-coolgray-400 font-semibold ml-2 pt-2">
+        <div className="mt-5 flex items-top">
+          <div className="min-w-[80px]">
+            <h2 className="font-heading">DJ'S': </h2>
+          </div>
+          <h5 className="text-coolgray-500 font-semibold ml-2 pt-1">
             {event.performers}
           </h5>
+        </div>
+
+        {/* DETAILS */}
+        <div className="mt-1 flex items-top">
+          <div className="min-w-[80px]">
+            <h2 className="font-heading">DETAILS: </h2>
+          </div>
+          <p className="text-coolgray-500 bold ml-2 mt-1">
+            {event.description}
+          </p>
+        </div>
+
+        {/* VENUE */}
+        <div className="mt-5 flex items-top">
+          <div className="min-w-[80px]">
+            <h2 className="font-heading">VENUE: </h2>
+          </div>
+          <div className="">
+            <p className="text-coolgray-800 font-bold ml-2 mt-1">
+              {event.venue}
+            </p>
+            <p className="text-coolgray-500 text-xs bold ml-2 mt-1">
+              {event.address}
+            </p>
+          </div>
         </div>
         <div className="flex mt-10">
           <LinkButton href="/events" linkText="Back To Events" />
