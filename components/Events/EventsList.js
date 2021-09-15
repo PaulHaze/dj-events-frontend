@@ -12,7 +12,6 @@ export function EventsList({ events }) {
   ));
   return (
     <div>
-      <h1>Events List</h1>
       {events && (
         <div className="my-4 lg:grid lg:grid-cols-2 lg:gap-2">
           {renderEvents}
