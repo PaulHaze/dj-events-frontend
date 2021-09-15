@@ -21,8 +21,17 @@ import { FcCalendar, FcHome, FcAlarmClock, FcAdvance } from 'react-icons/fc';
 
 export function EventsCard({ event }) {
   return (
-    <div className="border shadow-md rounded-lg my-3 flex sm:flex-row overflow-hidden bg-white h-full transition-all hover:scale-[1.02] hover:shadow-lg hover:z-50 lg:h-[120px]">
-      <div className="flex flex-shrink-0 mr-8 items-center ">
+    <div className="border shadow-md rounded-lg my-3 flex flex-col sm:flex-row overflow-hidden bg-white h-full transition-all hover:scale-[1.02] hover:shadow-lg hover:z-50 lg:h-[120px]">
+      <div
+        className="w-full flex h-[120px] overflow-hidden sm:hidden"
+        style={{
+          backgroundImage: `url(${event.image})`,
+          backgroundPosition: `center right`,
+          backgroundSize: `cover`,
+          backgroundRepeat: 'no-repeat',
+        }}
+      />
+      <div className="hidden sm:flex sm:flex-shrink-0 sm:mr-8 items-center">
         <Image
           src={event.image ? event.image : '/images/event-default.png'}
           width={170}

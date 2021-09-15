@@ -1,5 +1,3 @@
-import styles from './Hero.module.css';
-
 export function Hero({ imgUrl, title, subTitle, position = 'center' }) {
   return (
     <div

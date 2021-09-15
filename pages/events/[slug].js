@@ -6,8 +6,8 @@ import { LinkButton } from '@/components/index';
 
 import { API_URL } from '@/config/index';
 
-export default function EventPage({ slug, event }) {
-  const router = useRouter();
+export default function EventPage({ event }) {
+  // const router = useRouter();
 
   // const [event] = event;
   console.log(event);
@@ -32,11 +32,34 @@ export default function EventPage({ slug, event }) {
   );
 }
 
-export async function getServerSideProps({ query: { slug } }) {
+export async function getStaticPaths() {
   const res = await fetch(`${API_URL}/events`);
   const events = await res.json();
-  console.log(typeof events);
-  const event = events.find(e => e.slug === slug);
+
+  const slugs = events.map(evt => evt.slug);
+  const paths = slugs.map(slug => ({
+    params: {
+      slug,
+    },
+  }));
+
+  return { paths, fallback: false };
+}
+export async function getStaticProps({ params }) {
+  const res = await fetch(`${API_URL}/events/${params.slug}`);
+  const evt = await res.json();
+  return {
+    props: {
+      event: evt[0],
+    },
+  };
+}
+/* export async function getServerSideProps({ query: { slug } }) {
+  const res = await fetch(`${API_URL}/events/${slug}`);
+  const evt = await res.json();
+  const [event] = evt;
+  // console.log(event);
+  // const event = events.find(e => e.slug === slug);
   return {
     props: {
       slug,
@@ -44,3 +67,4 @@ export async function getServerSideProps({ query: { slug } }) {
     },
   };
 }
+ */
